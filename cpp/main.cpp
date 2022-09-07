@@ -39,6 +39,8 @@ int main(int argc, char* argv[]) {
 
     std::cout << "File created date: " << camsetObj.getFileDate() << std::endl;
 
+    std::cout << "---" << std::endl;
+
     std::cout << "Image sequence prefix filename: " << camsetObj.getImageFilenamePrefix() << std::endl;
 
     return 0;
