@@ -1,0 +1,16 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+        "type": "cppdbg",
+        "request": "launch",
+        "name": "Debug",
+        "cwd": "${workspaceFolder}",
+        "program": "${workspaceRoot}/cpp/sony_a7r_camset_parser",
+        "args": ["camset-files/single-shooting-mode-CAMSET01.DAT"]
+        }
+]
+}
