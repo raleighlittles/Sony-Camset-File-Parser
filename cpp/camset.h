@@ -64,6 +64,15 @@ class Camset
         return std::string(reinterpret_cast<const char*>(mCamsetData.data() + 40), 12);
     }
 
+    std::string getImageFilenamePrefix(void) const {
+
+        // When the camera saves images, it has the option of using a prefix, something like "A7R4134.ARW" (where 'A7R') is the prefix
+
+        // Starts at byte 2860, limited to 3 characters
+        
+        return std::string(reinterpret_cast<const char*>(mCamsetData.data() + 2860), 3);
+    }
+
 
   private:
     static const int mCamsetFileSize = 9216;
