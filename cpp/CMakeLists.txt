@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.22)
-project(sony_a7r_camset_parser DESCRIPTION "TODO")
+project(sony_camset_parser DESCRIPTION "TODO")
 
 set(CMAKE_CXX_STANDARD 23)
 set(CMAKE_BUILD_TYPE Debug)
