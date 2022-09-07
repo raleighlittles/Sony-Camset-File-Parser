@@ -38,14 +38,31 @@ class Camset
         std::string make = std::string(reinterpret_cast<const char*>(mCamsetData.data()), 4);
 
         // 5th byte is a '!', skip it
-        // 6th byte thru 14th byte have the 'Model' (always 'ILCE-7RM4')
+        // 6th byte thru 15th byte have the 'Model' (always 'ILCE-7RM4')
         std::string model = std::string(reinterpret_cast<const char*>(mCamsetData.data() + 5), /* 15 - 6 = */ 9);
 
         return (make + model);
     }
 
-    std::string getFileDate(void) const;
-    std::string getFileName(void) const;
+    std::string getFileDate(void) const {
+        // TODO: Eventually refactor to have separate getYear(), getMonth(), getDay(), etc
+
+        // Date starts at byte 21, goes for 13 bytes, ending at byte 34
+        // Has the format <YYYYMMDD_HHMM>, in 24-hour time
+        // Example: "20220906_1323"
+
+        return std::string(reinterpret_cast<const char*>(mCamsetData.data() + 21), 13);
+    }
+
+
+    std::string getFileName(void) const {
+        // I'm not entirely sure the format of this, I'm just assuming it looks the same every time
+
+        // Filename looks like: 'CAMSET01.DAT'
+        // Starts at byte 40, goes for 12 bytes, up to byte 52
+
+        return std::string(reinterpret_cast<const char*>(mCamsetData.data() + 40), 12);
+    }
 
 
   private:

@@ -22,7 +22,7 @@ int main(int argc, char* argv[]) {
         std::cerr << "Incorrect number of arguments, expected 2" << std::endl;
         return 1;
     }
-    
+
 
     const std::string camsetFile(argv[1]);
 
@@ -33,9 +33,11 @@ int main(int argc, char* argv[]) {
 
     Camset camsetObj = Camset(camsetFile);
 
-    const std::string cameraModel = camsetObj.getCameraMakeModel();
+    std::cout << "Camera model is = " << camsetObj.getCameraMakeModel() << std::endl;
 
-    std::cout << "Camera model is = " << cameraModel << std::endl;
+    std::cout << "File name is: " << camsetObj.getFileName() << std::endl;
+
+    std::cout << "File created date: " << camsetObj.getFileDate() << std::endl;
 
     return 0;
 }
