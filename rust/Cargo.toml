@@ -1,0 +1,11 @@
+[package]
+name = "camset_file_parser"
+version = "0.1.0"
+edition = "2021"
+description = "A tool for parsing Sony CAMSET files"
+repository = "https://github.com/raleighlittles/Sony-Camset-File-Parser"
+readme = "../README.md"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
