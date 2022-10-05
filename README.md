@@ -10,24 +10,36 @@ This tool is a parser for those Camset files. The goal of the project is to allo
 
 # Setup/Installation
 
-The project is a C++ application and is built via C-Make.
+There's 2 versions of this so far, one is a C++ and one is a Rust application. I'm planning on only supporting and developing the Rust version for now, but the C++ version might be used in environments where you don't have access to a Rust compiler.
 
-To build it:
+## Rust
+
+To build the **Rust** version:
+
+```bash
+$ cargo build
+```
+
+Once run, you should see something like:
+
+```
+Camera Make: SONY
+Camera Model: ILCE-7RM4
+File created on date: 20220906_13195
+Camset Name: CAMSET01.DAT
+Saved image filename prefix: A7R
+```
+
+## C++ version (Legacy)
+
+The C++ version uses CMake:
 
 ```bash
 $ cmake CMakeLists.txt
 $ make
 ```
 
-# Usage
-
-To run:
-
-```bash
-$ sony_camset_parser <my-camset-file>
-```
-
-This will print information about your camset file:
+Once run, you would see:
 
 ```
 Camera model is = SONYILCE-7RM4
