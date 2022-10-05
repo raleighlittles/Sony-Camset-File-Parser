@@ -55,6 +55,6 @@ Like I said before, this is an early work-in-progress. So far only one actual se
 
 | Menu Location | Setting Name                          | Model supported on     | Screenshots                                                                                                                                           |
 |---------------|---------------------------------------|------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Setup6        | File/Folder Settings -> Set File Name | ILCE-7RM4 (Sony A7RIV) | ![ screenshot-setup-6 ]( ./docs/screenshots/setup-6_ILCE7RM4.png )  ![ File/Folder Settings ]( ./docs/screenshots/file-folder-settings_ILCE7RM4.png ) |
+| Setup6        | File/Folder Settings -> Set File Name | ILCE-7RM4 (A7RIV), ILCE-9M2 (Alpha a9)| ![ screenshot-setup-6 ]( ./docs/screenshots/setup-6_ILCE7RM4.png )  ![ File/Folder Settings ]( ./docs/screenshots/file-folder-settings_ILCE7RM4.png ) |
 |               |                                       |                        |                                                                                                                                                       |
 |               |                                       |                        |                                                                                                                                                       |
